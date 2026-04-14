@@ -3,7 +3,7 @@ import random
 mode = input("Do you want to guess the states or capitals? ")
 
 def quiz(a):
-    states_to_capitals = ["Alabama:Montgomery", "Alaska:Juneau", "Arizona:Phoenix", "Arkansas:Little Rock", "California:Sacramento", "Colorado:Denver", "Connecticut:Hartford", "Delaware:Dover", "Florida:Tallahassee", "Georgia:Atlanta", "Hawaii:Honolulu", "Idaho:Boise", "Illinois:Springfield", ""]
+    states_to_capitals = ["Alabama:Montgomery", "Alaska:Juneau", "Arizona:Phoenix", "Arkansas:Little Rock", "California:Sacramento", "Colorado:Denver", "Connecticut:Hartford", "Delaware:Dover", "Florida:Tallahassee", "Georgia:Atlanta", "Hawaii:Honolulu", "Idaho:Boise", "Illinois:Springfield", "Indiana:Indianapolis", "Iowa:Des Moines", "Kansas:Topeka", "Kentucky:Frankfort", "Louisiana:Baton Rouge"]
     correct = 0
     if a == "capitals":
         random.shuffle(states_to_capitals)
@@ -17,6 +17,6 @@ def quiz(a):
                 correct += 1
             else:
                 print("Incorrect")
-            
+        print(f"You got {correct} out of {len(states_to_capitals)} questions correct!")
 
 quiz(mode)
